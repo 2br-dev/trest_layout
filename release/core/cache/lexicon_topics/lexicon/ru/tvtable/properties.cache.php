@@ -1,0 +1,15 @@
+<?php  return array (
+  'tvtable_prop_classname' => 'CSS класс таблицы',
+  'tvtable_prop_id' => 'ID ресурса. Если не указан, используется id текущего документа',
+  'tvtable_prop_tdTpl' => 'Чанк &lt;td&gt;',
+  'tvtable_prop_thTpl' => 'Чанк &lt;th&gt;',
+  'tvtable_prop_trTpl' => 'Чанк &lt;tr&gt;',
+  'tvtable_prop_tv' => 'ID или название TV параметра',
+  'tvtable_prop_wrapperTpl' => 'Чанк-обертка таблицы',
+  'tvtable_prop_bodyClass' => 'CSS класс тега &lt;tbody&gt;',
+  'tvtable_prop_tableClass' => 'CSS класс таблицы',
+  'tvtable_prop_headClass' => 'CSS класс тега &lt;thead&gt;',
+  'tvtable_prop_head' => 'Вывод таблицы с &lt;thead&gt;',
+  'tvtable_prop_getY' => 'Вывод столбца по индексу. Также можно указывать <strong>first</strong> и <strong>last</strong>',
+  'tvtable_prop_getX' => 'Вывод строки по индексу. Также можно указывать <strong>first</strong> и <strong>last</strong>',
+);

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Главная</title>
+<link rel="stylesheet" href="/css/master.css">
+<link href='https://api.mapbox.com/mapbox-gl-js/v2.6.0/mapbox-gl.css' rel='stylesheet' />
+</head>
+<body>
+    <header>
+    <div class="container">        
+        <nav>
+            <a href="/" class="logo"></a>
+            <span class="separator"></span>
+            <ul class="hide-m-down">
+                <li><a href="/rent.html">Аренда</a></li>
+                <li><a href="/renters.html">Арендаторы</a></li>
+                <li><a href="/stories.html">Городские истории</a></li>
+                <li><a href="/contacts.html">Контакты</a></li>
+            </ul>
+            <a href="#mobile-menu" class="hide-m-up burger-wrapper sidenav-trigger"><i class="mdi mdi-menu"></i></a>
+        </nav>
+    </div>
+</header>
+<ul class="sidenav" id="mobile-menu">
+    <li class="logo"></li>
+    <li><a href="/rent.html">Аренда</a></li>
+    <li><a href="/renters.html">Арендаторы</a></li>
+    <li><a href="/stories.html">Городские истории</a></li>
+    <li><a href="/contacts.html">Контакты</a></li>
+</ul>
+    <main id="main">
+        <section id="hero">
+            <div class="container">
+                <h1>Аренда офисов <br> в Усть-Куте</h1>
+                <div class="lazy" data-src="/img/main/hero.png"></div>
+            </div>
+        </section>
+        <section id="building">
+            <div class="container">
+                <div class="row valign-wrapper">
+                    <div class="col xl5 offset-xl1 l6 m12 s12 valign">
+                        <p>
+                            Здание ТРЕСТа было построено в 1986 году в центре Усть-Куты недалеко от реки и долгое время использовалось БАМовцами под свои нужды. Основной этап строительства БАМа был закончен в 1985 году, но работы ещё были далеко от завершения. В здании ТРЕСТа ежедневно кипела проектировочная работа по возведению БАМа, располагались административные помещения строителей, электриков, архитекторов, инженеров. Всё здание ТРЕСТа было одним гигантским офисом выполняющим сложную, но очень важную задачу. На какое-то время именно здание ТРЕСТа стало главным мозговым центром, курирующим строительство БАМа от и до.
+                        </p>
+                        <p>
+                            После распада Советского Союза, здание ТРЕСТа пустовало недолго и достаточно быстро стало использоваться в коммерческих целях, как крупными компаниями, так и небольшими предприятиями. Удобное расположение, большая парковка и живописная природа вокруг – сделали ТРЕСТ самым привлекательным зданием в городе для арендаторов. Ещё одним неоспоримым преимуществом здания ТРЕСТ является большая площадь. 5 этажей, каждый из которых идеально подходит для коммерческой деятельности, быстро стали местом силы для людей, начавших заниматься коммерческой деятельностью. 
+
+                        </p>
+                    </div>
+                    <div class="col xl5 offset-xl1 l6  m8 offset-m2 s12 valign">
+                        <div class="lazy" data-src="/img/main/building.jpg"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="facts">
+            <div class="container">
+                <div class="row">
+                    <div class="col s12 center-align">
+                        <h2>Несколько фактов</h2>
+                    </div>
+                </div>
+                <div class="row flex">
+                    <div class="col center-align l4 m6 s12">
+                        <div class="fact">
+                            <i class="fact-icon mdi mdi-resize"></i>
+                            <h3 class="mont">2500 м²</h3>
+                            <p>офисных и служебных помещений</p>
+                        </div>
+                    </div>
+                    <div class="col center-align l4 m6 s12">
+                        <div class="fact">
+                            <i class="fact-icon mdi mdi-parking"></i>
+                            <h3>Парковка</h3>
+                            <p>расположенная на придомовой территории</p>
+                        </div>
+                    </div>
+                    <div class="col center-align l4 m6 s12 offset-m3">
+                        <div class="fact">
+                            <i class="fact-icon mdi mdi-cash-register"></i>
+                            <h3>Обслуживание</h3>
+                            <p>Комунальные платежи включены в стоимость аренды</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="_map">
+            <div class="row flex">
+                <div class="col l6 m12">
+                    <div id="map"></div>
+                </div>
+                <div class="col l6 m12">
+                    <div class="lazy" data-src="/img/main/map.svg"></div>
+                </div>
+            </div>
+        </section>
+        <section id="gallery">
+            <div class="container">
+                <div class="row">
+                    <div class="col s12">
+                        <h2>Фотогалерея</h2>
+                    </div>
+                    <div class="col l4 m6 s12">
+                        <div class="lazy hoverable materialboxed" data-src="/img/main/gallery/1.jpg"></div>
+                    </div>
+                    <div class="col l4 m6 s12">
+                        <div class="lazy hoverable materialboxed" data-src="/img/main/gallery/2.jpg"></div>
+                    </div>
+                    <div class="col l4 m6 s12">
+                        <div class="lazy hoverable materialboxed" data-src="/img/main/gallery/3.jpg"></div>
+                    </div>
+                    <div class="col l4 m6 s12">
+                        <div class="lazy hoverable materialboxed" data-src="/img/main/gallery/4.jpg"></div>
+                    </div>
+                    <div class="col l4 m6 s12">
+                        <div class="lazy hoverable materialboxed" data-src="/img/main/gallery/5.jpg"></div>
+                    </div>
+                    <div class="col l4 m6 s12">
+                        <div class="lazy hoverable materialboxed" data-src="/img/main/gallery/6.jpg"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12 right-align">
+                        <a href="/gallery.html" class="btn">Больше снимков</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="plannings">
+            <div class="container">
+                <div class="row flex">
+                    <div class="col m5 s12 info">
+                        <h2>Планировки</h2>
+                        <p>
+                            Планировка является одним из важнейших параметров при выборе офиса. Даже важнее чем его расположение. Необходимо с умом подойти к выбору офисного помещения, грамотно оценивая не только текущую численность сотрудников и задачи, которые вы перед ними ставите, но и перспективы своего бизнеса. 
+                        </p>
+                        <p>
+                            Площадь ТРЕСТа, а также большое количество планировок под любой запрос, позволило нам создать комфортные условия для бизнеса любой величины. У нас располагаются офисы как больших корпораций на сотни сотрудников, так и небольшие компании, где редко работают больше трёх-четырёх человек.
+                        </p>
+                        <p>
+                            Также важна планировка не только внутри офиса, но и планировка здания в целом. ТРЕСТ – общий дом для многих компаний, но тесно себя никто не чувствует. Большие коридоры, несколько лестниц, простая и удобная навигация – вам не придётся чувствовать себя некомфортно, арендуя помещение у нас.
+                        </p>
+                        <a href="/plannings.html" class="btn">Открыть планировки</a>
+                    </div>
+                    <div class="col offset-m1 m6 s12 plan-image">
+                        <div class="lazy" data-src="/img/main/plannings.png"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+    <div class="container">
+        <div class="row">
+            <div class="col l2 m3">
+                <a href="/" class="logo"></a>
+            </div>
+            <div class="col l2 m3 align-center-m-down">
+                <ul>
+                    <li><a href="/rent.html">Аренда</a></li>
+                    <li><a href="/renters.html">Арендаторы</a></li>
+                    <li><a href="/stories.html">Городские истории</a></li>
+                    <li><a href="/contacts.html">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="col l8 m6 right-align align-center-m-down">
+                <p>
+                    <span>Телефон администратора</span>
+                    <a href="tel://+79834408696" class="mont">8 983 440 86 96</a>
+                </p>
+                <p>
+                    <span>Почтовый адрес</span>
+                    <a href="https://goo.gl/maps/nRLn4E3CtpovxanG7" rel="nofollow" target="_blank">Россия, Иркутская область, г. Усть-Кут, ул. Кирова, 18</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+<div class="footer-copyright">
+    <div class="container">
+        <div class="flex">
+            <div class="fc-left">
+                © Трест, 2021
+            </div>
+            <div class="fc-right">
+                <a href="https://2br.agency" target="_blank" rel="nofollow">
+                    Дизайн, разработка – студия <span class="logo">2Br</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+    <script src="/js/jquery.min.js"></script>
+<script src="/js/jquery.lazy.min.js"></script>
+<script src="/js/materialize.min.js"></script>
+<script src="/js/jquery.hyphen.ru.min.js"></script>
+<script src="/js/master.js"></script>
+</body>
+</html>

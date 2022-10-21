@@ -1,0 +1,122 @@
+header{
+
+    width: 100%;
+    z-index: 80;
+    position: fixed;
+    top: 30px;
+    transition: background-color .4s, top .4s;
+
+    & .container{
+
+        position: relative;
+
+        &:after{
+            content: '';
+            display: block;
+            width: 41.5%;
+            border-bottom: 1px solid #fff;
+
+            @media(max-width: $medium){
+                display: none;
+            }
+        }
+
+        & nav{
+
+            display: flex;
+
+            & .logo{
+                padding-left: 140px;
+                background: url(/img/logo.svg) center center no-repeat;
+                position: relative;
+            }
+
+            & ul{
+
+                padding: 0;
+                margin: 0;
+                display: flex;
+
+                & li{
+                    margin: 0;
+                    padding: 0;
+                    list-style: none;
+
+                    & a{
+                        line-height: 54px;
+                        padding: 0 16px;
+                        color: #fff;
+                        display: inline-block;
+                        transition: background-color .2s;
+
+                        &:hover{
+                            background: rgba(black, .05);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &.fixed{
+
+        top: 0;
+        background: #fff;
+
+        & .container{
+
+            & nav{
+
+                & .logo{
+                    background: url(/img/logo_red.svg) center center no-repeat;
+                }
+
+                & a{
+                    color: $text;
+                }
+            }
+        }
+    }
+
+    @media(max-width: $medium){
+        top: 0;
+        background: #fff;
+
+        & .container{
+
+            & nav{
+
+                & .logo{
+                    background: url(/img/logo_red.svg) center center no-repeat;
+                }
+
+                & a{
+                    color: $text;
+                }
+            }
+        }
+    }
+
+    & .burger-wrapper{
+
+        color: #fff;
+        display: inline-block;
+        line-height: 60px;
+        width: 60px;
+        text-align: center;
+        font-size: 24px;
+
+    }
+}
+
+.sidenav{
+
+    & .logo{
+        padding-bottom: 50%;
+        border-bottom: 1px solid #ccc;
+
+        background: url(/img/logo_red.svg) center center no-repeat;
+        background-size: 70% auto;
+        box-shadow: 0 0 64px lighten($primary, 40) inset;
+    }
+}

@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'tvtable',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '070f6e4a833a13ca2c6862cf1eca5426',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '63df5a0d0938e303d2042a299ffba657',
+  'native_key' => 'tvtable_clear_button',
+  'object' => '{"key":"tvtable_clear_button","value":false,"xtype":"combo-boolean","namespace":"tvtable","area":"tvtable_main","editedon":null}',
+);

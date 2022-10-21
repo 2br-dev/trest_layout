@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'tvtable',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'b9af84723078e760595cac071dccb1fd',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'b00099893c86c90f1a52174f717cc836',
+  'native_key' => 'tvtable_remove_confirm',
+  'object' => '{"key":"tvtable_remove_confirm","value":true,"xtype":"combo-boolean","namespace":"tvtable","area":"tvtable_main","editedon":null}',
+);

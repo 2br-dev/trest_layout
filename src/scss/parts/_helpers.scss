@@ -1,0 +1,208 @@
+body{
+
+    background-color: $paper;
+
+    & a{
+
+        color: $text;
+
+        &.btn{
+
+            color: #fff;
+            display: inline-block;
+            line-height: 50px;
+            padding: 0 20px;
+            transition: background .4s;
+            position: relative;
+            z-index: 1;
+            overflow: hidden;
+            transition: box-shadow .2s;
+
+            &:before{
+                content: '';
+                position: absolute;
+                display: block;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 200%;
+                background: linear-gradient( $primary 50%, lighten($primary, 10) 50.1% );
+                z-index: -1;
+                transition: top .2s;
+            }
+            
+            &:hover{
+
+                box-shadow: 0 2px 6px rgba(black, .4);
+
+                &:before{
+
+                    top: -50%;
+                }
+            }
+        }
+    }
+
+    & .separator{
+        flex-grow: 1;
+
+    }
+    
+    & footer{
+
+        padding: 2vw 0;
+
+        & ul{
+            margin: 0;
+
+            @media(max-width: $medium){
+                margin-bottom: 20px;
+            }
+        }
+
+        & a{
+
+            display: inline-block;
+            width: fit-content;
+
+            &:hover{
+                text-decoration: underline;
+            }
+
+            &.logo{
+                width: 60%;
+                padding-top: 20%;
+                background: url(/img/logo_red.svg);
+                background-repeat: no-repeat;
+                background-size: 100% auto;
+                
+                @media(max-width: $medium){
+                    display: block;
+                    width: 100%;
+                    height: 50px;
+                    margin: auto;
+                    padding-top: 0;
+                    background-size: contain;
+                    background-position: center;
+                    margin-bottom: 20px;
+                }
+
+            }
+        }
+
+        & .right-align a{
+            margin-left: auto;
+        }
+
+        & p{
+
+            margin: 0;
+
+            & > span, & > a{
+                display: block;
+            }
+
+            &:first-of-type{
+
+                & a{
+                    font-size: 32px;
+                    font-weight: 900;
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+
+    & .footer-copyright{
+
+        background: darken($paper, 5);
+        filter: grayscale(.5);
+
+        & .flex{
+
+            display: flex;
+            flex-wrap: wrap;
+
+            & .fc-right{
+                text-align: right;
+
+                & .logo{
+                    font-weight: 900;
+                    font-style: italic;
+                }
+            }
+
+            & .fc-left, & .fc-right{
+                line-height: 40px;
+                flex-grow: 1;
+
+                @media(max-width: $medium){
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    & .vert-separator{
+        height: 100%;
+        width: 0;
+        margin: auto;
+        border-left: 1px dashed #ccc;
+    }
+
+    & ul.tabs{
+
+        background: transparent;
+
+        & li.tab{
+
+            & a{
+                color: rgba($primary, .5);
+                font-weight: 600;
+
+                &.active{
+                    color: $primary;
+                }
+            }
+        }
+
+        & li.indicator{
+            background-color: $primary;
+        }
+    }
+
+    & svg{
+        max-width: calc(100% - 40px);
+        margin-left: 20px;
+        margin-bottom: -7vmin;
+        height: fit-content;
+
+        & .room{
+            opacity: 0;
+            cursor: pointer;
+
+            &.disabled{
+                opacity: 1;
+            }
+        }
+    }
+
+    & .row{
+
+        & .col.rooms{
+    
+            @media(max-width: $medium){
+                display: none;
+            }
+        }
+    }
+
+    & .hidden{
+        display: none !important;
+    }
+
+    & .visible{
+        display: block !important;
+    }
+}
